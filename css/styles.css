@@ -123,6 +123,12 @@ ul {
     letter-spacing: 0.02em;    
 }
 
+.item-header-active {
+    
+    
+
+}
+
 .mail {
     width: 16px;
     height: 12px;
@@ -137,6 +143,25 @@ ul {
 
 .link {        
     color: var(--title-text-color);
+}
+
+.link-active {
+    color: var(--accent-text-color);    
+}
+
+.item-header-active {
+    position: relative;
+}
+
+.link-line::after {
+    content: "";   
+    display: flex;      
+    position: absolute;    
+    width: 100%;    
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 29px;     
+    background-color: var(--accent-background-color);
 }
 
 .link-item {  
@@ -274,6 +299,33 @@ ul {
     padding-left: 0px;
     margin: 0;
     gap: 30px;
+}
+
+.item-work {
+   position: relative; 
+}
+
+.aside-work {
+    position: absolute;
+    /* outline: 1px solid orange;     */
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+}
+
+.headline-work {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);    
 }
 
 /* team */
